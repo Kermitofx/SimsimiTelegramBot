@@ -28,7 +28,7 @@ def SimSimi(bot, update):
 	except:
 		update.effective_message.reply_text("Error!")
 
-simsimi_handler = MessageHandler(Filters.private, SimSimi)
+simsimi_handler = MessageHandler(Filters.private, Filters.group, SimSimi)
 """
 For only private chat response, use Filters.private
 For any text exclude image caption or other, use Filters.text
